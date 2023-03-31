@@ -212,3 +212,21 @@ Fri 31 Mar 2023 06:39:15 PM UTC:
  tests:  12|1
 total_score: 60/70
 50f1b6d
+Fri 31 Mar 2023 06:40:09 PM UTC: 
+ arraylist.c | 2 ++
+ 1 file changed, 2 insertions(+)
+In file included from test.c:5:
+arraylist.c: In function ‘clean’:
+arraylist.c:66:3: error: ‘list’ undeclared (first use in this function)
+   66 |   list->data = malloc(sizeof(void*));
+      |   ^~~~
+arraylist.c:66:3: note: each undeclared identifier is reported only once for each function it appears in
+arraylist.c:67:33: error: ‘return’ with a value, in function returning void [-Werror=return-type]
+   67 |   if(list->data == NULL) return NULL;
+      |                                 ^~~~
+arraylist.c:62:6: note: declared here
+   62 | void clean(ArrayList * l){
+      |      ^~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+8c9555e
