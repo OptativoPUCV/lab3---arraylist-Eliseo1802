@@ -11,7 +11,11 @@ typedef struct ArrayList {
 } ArrayList;
 
 ArrayList *createList(void) {
-    return NULL;
+  ArrayList* list = (ArrayList*)malloc(sizeof(ArrayList));
+  list->size = 0;
+  list->capacity = 2;
+  list->data = malloc(sizeof(void*);
+  return list;
 }
 
 void append(ArrayList * l, void * data){
