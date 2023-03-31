@@ -28,12 +28,14 @@ void append(ArrayList * l, void * data){
 }
 
 void push(ArrayList * l, void * data, int i){
-  
-  
-  
-  
-  
-  //l->size++;
+  if(i <= l->size){
+    if(l->size == l->capacity)
+      l->capacity*=2;
+    for(int k = l->size;k > i;k--)
+      l->data[k] = l->data[k+1];
+    l->data[i] = data;
+    l->size++;
+  }
 }
 
 void* pop(ArrayList * l, int i){
