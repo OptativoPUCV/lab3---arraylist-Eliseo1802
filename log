@@ -230,3 +230,14 @@ arraylist.c:62:6: note: declared here
 cc1: all warnings being treated as errors
 Compilation failed
 8c9555e
+Fri 31 Mar 2023 06:40:18 PM UTC: 
+ arraylist.c | 1 -
+ 1 file changed, 1 deletion(-)
+In file included from test.c:5:
+arraylist.c: In function ‘clean’:
+arraylist.c:66:3: error: ‘list’ undeclared (first use in this function)
+   66 |   list->data = malloc(sizeof(void*));
+      |   ^~~~
+arraylist.c:66:3: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+c50dd62
