@@ -21,11 +21,8 @@ ArrayList *createList(void){
 }
 
 void append(ArrayList * l, void * data){
-  
-  
-  
-  
-  //l->size++;  
+  l->data[l->size] = data;
+  l->size++;
 }
 
 void push(ArrayList * l, void * data, int i){
