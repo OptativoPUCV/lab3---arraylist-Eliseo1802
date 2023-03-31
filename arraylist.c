@@ -22,10 +22,19 @@ ArrayList *createList(void){
 
 void append(ArrayList * l, void * data){
   
+  
+  
+  
+  l->size++;  
 }
 
 void push(ArrayList * l, void * data, int i){
   
+  
+  
+  
+  
+  l->size++;
 }
 
 void* pop(ArrayList * l, int i){
