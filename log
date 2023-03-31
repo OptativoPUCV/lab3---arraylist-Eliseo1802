@@ -183,3 +183,14 @@ arraylist.c:63:3: error: ‘list’ undeclared (first use in this function)
 arraylist.c:63:3: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 ace6edd
+Fri 31 Mar 2023 06:34:58 PM UTC: 
+ arraylist.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+arraylist.c: In function ‘clean’:
+arraylist.c:64:8: error: ‘list’ undeclared (first use in this function)
+   64 |   free(list->data);
+      |        ^~~~
+arraylist.c:64:8: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+b89d9d7
